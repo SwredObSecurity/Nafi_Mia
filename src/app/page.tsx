@@ -11,6 +11,7 @@ import AnimatedSkills from "@/components/AnimatedSkills";
 import AnimatedCounter from "@/components/AnimatedCounter";
 import ProjectCard from "@/components/ProjectCard";
 import ParallaxText from "@/components/ParallaxText";
+import { projects } from "@/data/projects";
 
 const stagger = {
   hidden: {},
@@ -143,7 +144,7 @@ export default function Home() {
         <div className="marquee-track">
           {Array.from({ length: 2 }).map((_, setIndex) => (
             <div key={setIndex} className="flex items-center gap-8 px-4">
-              {["C", "C++", "C#", "Java", "HTML", "CSS", "JavaScript", "Vibe Coding"].map(
+              {["C", "C++", "C#", "Java", "HTML", "CSS", "JavaScript", "SQL", "Next.js", "Vibe Coding"].map(
                 (skill) => (
                   <span
                     key={`${setIndex}-${skill}`}
@@ -178,7 +179,7 @@ export default function Home() {
               <div className="space-y-8">
                 <div className="grid grid-cols-2 gap-6">
                   <AnimatedCounter target={7} suffix="+" label="Languages" />
-                  <AnimatedCounter target={1} suffix="+" label="Projects" />
+                  <AnimatedCounter target={20} suffix="+" label="Projects" />
                 </div>
 
                 <div className="rounded-2xl border border-border bg-surface p-6">
@@ -315,18 +316,23 @@ export default function Home() {
               </span>
               <div className="section-divider" />
               <h2 className="text-2xl sm:text-3xl font-bold tracking-tight pt-2">
-                Featured project
+                Featured projects
               </h2>
             </div>
           </ScrollReveal>
 
-          <ProjectCard
-            title="Laptops E-Commerce Shop"
-            description="A fully functional e-commerce web application for browsing and purchasing laptops. Built with modern web technologies, featuring a clean UI, product filtering, and seamless checkout experience. Deployed on Vercel."
-            url="http://laptops-ecom-shop.vercel.app/"
-            displayUrl="laptops-ecom-shop.vercel.app"
-            tags={["E-Commerce", "Web App", "Vercel"]}
-          />
+          <div className="space-y-6">
+            {projects.map((project) => (
+              <ProjectCard
+                key={project.slug}
+                title={project.title}
+                description={project.shortDescription}
+                slug={project.slug}
+                displayUrl={project.displayUrl}
+                tags={project.tags}
+              />
+            ))}
+          </div>
         </div>
       </section>
 

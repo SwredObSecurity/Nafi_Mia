@@ -2,18 +2,19 @@
 
 import { useRef } from "react";
 import { motion, useInView } from "framer-motion";
+import Link from "next/link";
 import InteractiveCard from "./InteractiveCard";
 
 export default function ProjectCard({
   title,
   description,
-  url,
+  slug,
   displayUrl,
   tags,
 }: {
   title: string;
   description: string;
-  url: string;
+  slug: string;
   displayUrl: string;
   tags: string[];
 }) {
@@ -35,10 +36,8 @@ export default function ProjectCard({
       transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
     >
       <InteractiveCard>
-        <a
-          href={url}
-          target="_blank"
-          rel="noopener noreferrer"
+        <Link
+          href={`/projects/${slug}`}
           onMouseMove={handleMouseMove}
           className="project-card group block rounded-2xl border border-border bg-surface
             p-8 sm:p-10 hover:border-accent/40 transition-all duration-400"
@@ -68,7 +67,7 @@ export default function ProjectCard({
                   <path
                     strokeLinecap="round"
                     strokeLinejoin="round"
-                    d="M7 17L17 7M17 7H7M17 7v10"
+                    d="M8.25 4.5l7.5 7.5-7.5 7.5"
                   />
                 </svg>
               </motion.div>
@@ -88,7 +87,7 @@ export default function ProjectCard({
               ))}
             </div>
           </div>
-        </a>
+        </Link>
       </InteractiveCard>
     </motion.div>
   );
