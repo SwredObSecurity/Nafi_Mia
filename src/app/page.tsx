@@ -298,6 +298,81 @@ export default function Home() {
       </section>
 
       {/* ═══════════════════════════════════════════
+          HOW I WORK
+      ═══════════════════════════════════════════ */}
+      <section id="process" className="py-32 px-6">
+        <div className="max-w-3xl mx-auto">
+          <ScrollReveal>
+            <div className="space-y-4 mb-12">
+              <span className="text-[13px] uppercase tracking-[0.2em] text-accent font-medium font-mono">
+                How I Work
+              </span>
+              <div className="section-divider" />
+              <h2 className="text-2xl sm:text-3xl font-bold tracking-tight pt-2">
+                My development approach
+              </h2>
+            </div>
+          </ScrollReveal>
+
+          <div className="grid sm:grid-cols-2 gap-5">
+            {[
+              {
+                step: "01",
+                title: "Learn by Building",
+                desc: "I don't just read docs — I build real projects. From ATM systems to e-commerce shops, every project is a deep dive into how things actually work under the hood.",
+                icon: "M12 6.042A8.967 8.967 0 006 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 016 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 016-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0018 18a8.967 8.967 0 00-6 2.292m0-14.25v14.25",
+              },
+              {
+                step: "02",
+                title: "Systems Thinking",
+                desc: "I connect the dots between components. My restaurant system integrates with my ATM system for payments — I think in ecosystems, not isolated features.",
+                icon: "M7.5 21L3 16.5m0 0L7.5 12M3 16.5h13.5m0-13.5L21 7.5m0 0L16.5 12M21 7.5H7.5",
+              },
+              {
+                step: "03",
+                title: "Full-Stack Range",
+                desc: "Low-level C/C++ for understanding memory and performance. Java for architecture and OOP. JavaScript for interactive web experiences. SQL for data. I choose the right tool for the job.",
+                icon: "M6.429 9.75L2.25 12l4.179 2.25m0-4.5l5.571 3 5.571-3m-11.142 0L2.25 7.5 12 2.25l9.75 5.25-4.179 2.25m0 0L21.75 12l-4.179 2.25m0 0L21.75 16.5 12 21.75 2.25 16.5l4.179-2.25m0 0l5.571 3 5.571-3",
+              },
+              {
+                step: "04",
+                title: "Ship & Iterate",
+                desc: "I deploy early, iterate fast, and keep code clean. Every project gets pushed to GitHub, and web projects go live on Vercel. Visibility and accountability drive quality.",
+                icon: "M15.59 14.37a6 6 0 01-5.84 7.38v-4.8m5.84-2.58a14.98 14.98 0 006.16-12.12A14.98 14.98 0 009.631 8.41m5.96 5.96a14.926 14.926 0 01-5.841 2.58m-.119-8.54a6 6 0 00-7.381 5.84h4.8m2.581-5.84a14.927 14.927 0 00-2.58 5.84m2.699 2.7c-.103.021-.207.041-.311.06a15.09 15.09 0 01-2.448-2.448 14.9 14.9 0 01.06-.312m-2.24 2.39a4.493 4.493 0 00-1.757 4.306 4.493 4.493 0 004.306-1.758M16.5 9a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0z",
+              },
+            ].map((item, i) => (
+              <ScrollReveal key={item.step} delay={i * 0.1}>
+                <motion.div
+                  whileHover={{ y: -4 }}
+                  transition={{ duration: 0.3 }}
+                  className="group rounded-2xl border border-border bg-surface p-7 space-y-4
+                    hover:border-accent/30 hover:shadow-lg hover:shadow-accent/5 transition-all duration-300 h-full"
+                >
+                  <div className="flex items-center justify-between">
+                    <motion.div
+                      className="w-10 h-10 rounded-xl bg-accent/10 flex items-center justify-center"
+                      whileHover={{ rotate: 10, scale: 1.1 }}
+                    >
+                      <svg className="w-5 h-5 text-accent" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
+                        <path strokeLinecap="round" strokeLinejoin="round" d={item.icon} />
+                      </svg>
+                    </motion.div>
+                    <span className="text-[11px] font-mono text-muted/40">{item.step}</span>
+                  </div>
+                  <h3 className="font-semibold group-hover:text-accent transition-colors">
+                    {item.title}
+                  </h3>
+                  <p className="text-sm text-muted leading-relaxed">
+                    {item.desc}
+                  </p>
+                </motion.div>
+              </ScrollReveal>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* ═══════════════════════════════════════════
           PARALLAX DIVIDER
       ═══════════════════════════════════════════ */}
       <ParallaxText className="text-6xl sm:text-8xl font-bold text-border opacity-30 select-none flex">

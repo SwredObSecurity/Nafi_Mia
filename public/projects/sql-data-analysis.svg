@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="400" fill="none">
+  <rect width="800" height="400" rx="16" fill="#0a1628"/>
+  <!-- Table visualization -->
+  <rect x="40" y="40" width="450" height="320" rx="12" fill="#0f2240" stroke="#2563eb" stroke-width="1"/>
+  <text x="70" y="75" font-family="monospace" font-size="12" fill="#60a5fa">SELECT * FROM census_data</text>
+  <text x="70" y="95" font-family="monospace" font-size="12" fill="#60a5fa">WHERE state = 'NY'</text>
+  <text x="70" y="115" font-family="monospace" font-size="12" fill="#60a5fa">ORDER BY population DESC;</text>
+  <!-- Results table -->
+  <rect x="60" y="135" width="410" height="25" rx="4" fill="#1e3a5f"/>
+  <text x="75" y="152" font-family="monospace" font-size="10" fill="#93c5fd" font-weight="bold">county</text>
+  <text x="180" y="152" font-family="monospace" font-size="10" fill="#93c5fd" font-weight="bold">population</text>
+  <text x="300" y="152" font-family="monospace" font-size="10" fill="#93c5fd" font-weight="bold">growth_%</text>
+  <text x="400" y="152" font-family="monospace" font-size="10" fill="#93c5fd" font-weight="bold">area</text>
+  <text x="75" y="180" font-family="monospace" font-size="10" fill="#e2e8f0">Kings</text>
+  <text x="180" y="180" font-family="monospace" font-size="10" fill="#e2e8f0">2,736,074</text>
+  <text x="310" y="180" font-family="monospace" font-size="10" fill="#22c55e">+1.8%</text>
+  <text x="400" y="180" font-family="monospace" font-size="10" fill="#e2e8f0">71 mi²</text>
+  <text x="75" y="200" font-family="monospace" font-size="10" fill="#cbd5e1">Queens</text>
+  <text x="180" y="200" font-family="monospace" font-size="10" fill="#cbd5e1">2,405,464</text>
+  <text x="310" y="200" font-family="monospace" font-size="10" fill="#22c55e">+0.9%</text>
+  <text x="400" y="200" font-family="monospace" font-size="10" fill="#cbd5e1">109 mi²</text>
+  <text x="75" y="220" font-family="monospace" font-size="10" fill="#e2e8f0">New York</text>
+  <text x="180" y="220" font-family="monospace" font-size="10" fill="#e2e8f0">1,694,251</text>
+  <text x="310" y="220" font-family="monospace" font-size="10" fill="#ef4444">-0.3%</text>
+  <text x="400" y="220" font-family="monospace" font-size="10" fill="#e2e8f0">23 mi²</text>
+  <text x="75" y="240" font-family="monospace" font-size="10" fill="#cbd5e1">Bronx</text>
+  <text x="180" y="240" font-family="monospace" font-size="10" fill="#cbd5e1">1,472,654</text>
+  <text x="310" y="240" font-family="monospace" font-size="10" fill="#22c55e">+1.2%</text>
+  <text x="400" y="240" font-family="monospace" font-size="10" fill="#cbd5e1">42 mi²</text>
+  <text x="70" y="290" font-family="monospace" font-size="10" fill="#475569">4 rows returned in 0.23ms</text>
+  <text x="70" y="340" font-family="monospace" font-size="11" fill="#2563eb">19 Chapters &bull; Real-World Data</text>
+  <!-- Chart -->
+  <rect x="520" y="40" width="240" height="320" rx="12" fill="#0f2240" stroke="#2563eb" stroke-width="1"/>
+  <text x="550" y="75" font-family="monospace" font-size="11" fill="#60a5fa">Population Chart</text>
+  <rect x="550" y="100" width="30" height="180" rx="4" fill="#2563eb"/>
+  <rect x="595" y="130" width="30" height="150" rx="4" fill="#3b82f6"/>
+  <rect x="640" y="160" width="30" height="120" rx="4" fill="#60a5fa"/>
+  <rect x="685" y="180" width="30" height="100" rx="4" fill="#93c5fd"/>
+  <text x="555" y="300" font-family="monospace" font-size="8" fill="#475569">KNG</text>
+  <text x="600" y="300" font-family="monospace" font-size="8" fill="#475569">QNS</text>
+  <text x="645" y="300" font-family="monospace" font-size="8" fill="#475569">NYC</text>
+  <text x="690" y="300" font-family="monospace" font-size="8" fill="#475569">BRX</text>
+  <rect x="550" y="330" width="100" height="20" rx="4" fill="#1e3a5f"/>
+  <text x="560" y="344" font-family="monospace" font-size="10" fill="#60a5fa">PostgreSQL</text>
+</svg>

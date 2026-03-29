@@ -4,7 +4,9 @@ export interface Project {
   shortDescription: string;
   fullDescription: string[];
   liveUrl?: string;
+  githubUrl?: string;
   displayUrl: string;
+  image: string;
   tags: string[];
   features: string[];
   techStack: string[];
@@ -23,7 +25,9 @@ export const projects: Project[] = [
       "This project was built to demonstrate full-stack web development skills, from frontend design and interactivity to deployment and production-readiness.",
     ],
     liveUrl: "http://laptops-ecom-shop.vercel.app/",
+    githubUrl: "https://github.com/SwredObSecurity/Laptops-Ecom-Shop",
     displayUrl: "laptops-ecom-shop.vercel.app",
+    image: "/projects/laptops-ecom-shop.svg",
     tags: ["E-Commerce", "Web App", "Vercel"],
     features: [
       "Product browsing with filtering and sorting",
@@ -45,7 +49,9 @@ export const projects: Project[] = [
       "The system implements secure authentication using card number and PIN combinations. All member data including balances, transaction history, and account details are persisted using file-based storage, allowing data to survive between sessions.",
       "Key operations include checking balances, depositing and withdrawing funds, transferring money between accounts, changing PINs, and cancelling cards. The system includes input validation and error handling to prevent invalid operations.",
     ],
+    githubUrl: "https://github.com/SwredObSecurity/ATM-Banking-System",
     displayUrl: "Java Console App",
+    image: "/projects/atm-banking-system.svg",
     tags: ["Java", "File I/O", "Authentication"],
     features: [
       "Member registration with card number generation",
@@ -69,7 +75,9 @@ export const projects: Project[] = [
       "The system integrates with the ATM Banking System for card-based payments, validating card numbers against stored member data. For cash payments, it calculates change automatically. Upon successful payment, order confirmations are sent via email.",
       "A built-in debug logging system tracks all transactions for auditing purposes. The modular design separates concerns between ordering, payment processing, and notification, demonstrating clean software architecture principles.",
     ],
+    githubUrl: "https://github.com/SwredObSecurity/Restaurant-Ordering-System",
     displayUrl: "Java Console App",
+    image: "/projects/restaurant-ordering-system.svg",
     tags: ["Java", "Email API", "Payment Integration"],
     features: [
       "Interactive menu-driven ordering interface",
@@ -93,7 +101,9 @@ export const projects: Project[] = [
       "The collection spans multiple genres: action games (UFO collector, space shooter, rock storm), puzzle and navigation (maze, submarine explorer), classic arcade remakes (snake, tennis, balloon pop), and skill-based challenges (fish catching, star collection, donut dodge).",
       "Every game features audio effects, image sprites, real-time score tracking, and time-based challenges. The project demonstrates deep understanding of DOM manipulation, event handling, game loops, and the HTML5 Canvas API.",
     ],
+    githubUrl: "https://github.com/SwredObSecurity/JavaScript-Games-Collection",
     displayUrl: "HTML5 / Vanilla JS",
+    image: "/projects/javascript-games.svg",
     tags: ["JavaScript", "HTML5 Canvas", "Game Dev"],
     features: [
       "15+ fully playable browser games",
@@ -117,7 +127,9 @@ export const projects: Project[] = [
       "Topics covered include variable declaration and data types, constants, arithmetic and string operations, arrays, type casting and conversion, comparison operators, logical operators (AND, OR, NOT), and conditional statements (if/else, switch).",
       "Each file is self-contained with examples and comments, making it easy to revisit specific concepts. The project demonstrates a methodical approach to learning a new language by isolating and practising individual building blocks.",
     ],
+    githubUrl: "https://github.com/SwredObSecurity/CSharp-Fundamentals",
     displayUrl: ".NET 9.0 Console App",
+    image: "/projects/csharp-fundamentals.svg",
     tags: ["C#", ".NET", "Fundamentals"],
     features: [
       "Organised by concept — one file per topic",
@@ -141,7 +153,9 @@ export const projects: Project[] = [
       "The project works with substantial real data including U.S. Census population records, earthquake JSON datasets (9MB+), geographic shapefiles for roads, water bodies, and county boundaries. This grounding in real data makes the SQL skills immediately transferable to professional work.",
       "Advanced topics include statistical analysis and aggregation, multi-table joins, data cleaning and validation, text mining with pattern matching, spatial/GIS data analysis, JSON data handling, views, functions, triggers, and command-line database management.",
     ],
+    githubUrl: "https://github.com/SwredObSecurity/SQL-Data-Analysis",
     displayUrl: "PostgreSQL",
+    image: "/projects/sql-data-analysis.svg",
     tags: ["SQL", "PostgreSQL", "Data Analysis"],
     features: [
       "19 progressive chapters",
