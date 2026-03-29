@@ -1,0 +1,20 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(pip show:*)",
+      "Bash(pip install:*)",
+      "Bash(python -m pip install python-docx)",
+      "Bash(py --version)",
+      "Bash(npm init:*)",
+      "Bash(npm install:*)",
+      "Bash(npx:*)",
+      "Bash(shopt -s dotglob)",
+      "Bash(mv nafi-mia-portfolio/* .)",
+      "Bash(mv nafi-mia-portfolio/.* .)",
+      "Bash(npm run:*)",
+      "WebSearch",
+      "Bash(gh:*)",
+      "Bash(git:*)"
+    ]
+  }
+}
