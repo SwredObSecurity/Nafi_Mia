@@ -36,7 +36,7 @@ export default function Navbar() {
           href="#"
           className="text-base font-semibold tracking-tight hover:opacity-70 transition-opacity"
         >
-          nafi
+          Nafi
           <span className="text-accent">.</span>
         </a>
 

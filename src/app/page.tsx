@@ -63,7 +63,10 @@ export default function Home() {
           <motion.div variants={fadeUp} className="space-y-3">
             <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold tracking-tight leading-[1.05]">
               Hi, I&apos;m{" "}
-              <span className="gradient-text">Nafi</span>
+              <span className="gradient-text relative">
+                Nafi
+                <span className="absolute -inset-2 rounded-lg bg-accent/10 blur-xl -z-10 animate-pulse" />
+              </span>
             </h1>
             <h2
               className="text-3xl sm:text-4xl lg:text-5xl tracking-tight leading-[1.1] text-muted italic"
@@ -144,7 +147,7 @@ export default function Home() {
         <div className="marquee-track">
           {Array.from({ length: 2 }).map((_, setIndex) => (
             <div key={setIndex} className="flex items-center gap-8 px-4">
-              {["C", "C++", "C#", "Java", "HTML", "CSS", "JavaScript", "SQL", "Next.js", "Vibe Coding"].map(
+              {["C", "C++", "C#", "Java", "HTML", "CSS", "JavaScript", "SQL", "Next.js", "Rust", "Vibe Coding"].map(
                 (skill) => (
                   <span
                     key={`${setIndex}-${skill}`}
@@ -480,13 +483,16 @@ export default function Home() {
               </span>
               <div className="section-divider" />
               <h2 className="text-2xl sm:text-3xl font-bold tracking-tight pt-2">
-                Featured projects
+                All projects
+                <span className="ml-3 inline-flex items-center justify-center w-8 h-8 rounded-full bg-accent/10 text-accent text-sm font-mono border border-accent/20">
+                  {projects.length}
+                </span>
               </h2>
             </div>
           </ScrollReveal>
 
           <div className="space-y-6">
-            {projects.map((project) => (
+            {projects.map((project, i) => (
               <ProjectCard
                 key={project.slug}
                 title={project.title}

@@ -32,10 +32,19 @@ export default function GlowCursor() {
         translateY: "-50%",
       }}
     >
+      {/* Outer soft glow */}
       <div
-        className="w-[500px] h-[500px] rounded-full opacity-[0.035] dark:opacity-[0.04]"
+        className="absolute inset-0 w-[600px] h-[600px] rounded-full opacity-[0.12] dark:opacity-[0.10]"
         style={{
-          background: "radial-gradient(circle, var(--accent), transparent 70%)",
+          background: "radial-gradient(circle, var(--accent), transparent 60%)",
+          transform: "translate(-50px, -50px)",
+        }}
+      />
+      {/* Inner bright core */}
+      <div
+        className="w-[500px] h-[500px] rounded-full opacity-[0.08] dark:opacity-[0.07]"
+        style={{
+          background: "radial-gradient(circle, var(--accent) 0%, var(--accent) 10%, transparent 65%)",
         }}
       />
     </motion.div>
