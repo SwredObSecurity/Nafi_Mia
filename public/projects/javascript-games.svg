@@ -34,5 +34,5 @@
   <text x="550" y="250" font-family="monospace" font-size="10" fill="#f59e0b">Score: 2100</text>
   <!-- Title bar -->
   <text x="240" y="340" font-family="system-ui,sans-serif" font-size="24" fill="#e2e8f0" font-weight="bold">15+ Browser Games</text>
-  <text x="290" y="365" font-family="monospace" font-size="12" fill="#64748b">Vanilla JS &bull; HTML5 Canvas</text>
+  <text x="290" y="365" font-family="monospace" font-size="12" fill="#64748b">Vanilla JS &#8226; HTML5 Canvas</text>
 </svg>
