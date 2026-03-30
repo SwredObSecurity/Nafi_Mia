@@ -30,7 +30,7 @@ export default function FeedbackModal({
     setStatus("sending");
 
     try {
-      const res = await fetch("https://formspree.io/nafimiatal@gmail.com", {
+      const res = await fetch("https://formspree.io/f/xvzvalkz", {
         method: "POST",
         headers: { "Content-Type": "application/json", Accept: "application/json" },
         body: JSON.stringify({ name, email, message }),
