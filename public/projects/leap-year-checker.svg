@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="400" fill="none">
+  <rect width="800" height="400" rx="16" fill="#1a0a20"/>
+  <!-- Title -->
+  <text x="250" y="40" font-family="monospace" font-size="18" fill="#d8b4fe" font-weight="bold">Leap Year Checker</text>
+  <!-- Input area -->
+  <rect x="250" y="55" width="300" height="40" rx="8" fill="#2a1540" stroke="#9333ea" stroke-width="1"/>
+  <text x="270" y="80" font-family="monospace" font-size="14" fill="#e9d5ff">Year: 2024</text>
+  <rect x="570" y="55" width="80" height="40" rx="8" fill="#9333ea"/>
+  <text x="586" y="80" font-family="monospace" font-size="12" fill="white">Check</text>
+  <!-- Results grid -->
+  <rect x="60" y="115" width="680" height="250" rx="12" fill="#1f0d30" stroke="#7c3aed" stroke-width="1"/>
+  <text x="310" y="145" font-family="monospace" font-size="13" fill="#c084fc" font-weight="bold">Year Results</text>
+  <line x1="80" y1="155" x2="720" y2="155" stroke="#3b1f5e" stroke-width="1"/>
+  <!-- Row 1 -->
+  <rect x="80" y="168" width="140" height="40" rx="8" fill="#22c55e" opacity="0.15"/>
+  <text x="100" y="193" font-family="monospace" font-size="14" fill="#86efac">2024</text>
+  <text x="165" y="193" font-family="monospace" font-size="14" fill="#22c55e">&#x2713;</text>
+  <rect x="240" y="168" width="140" height="40" rx="8" fill="#ef4444" opacity="0.15"/>
+  <text x="260" y="193" font-family="monospace" font-size="14" fill="#fca5a5">2023</text>
+  <text x="335" y="193" font-family="monospace" font-size="14" fill="#ef4444">&#x2717;</text>
+  <rect x="400" y="168" width="140" height="40" rx="8" fill="#ef4444" opacity="0.15"/>
+  <text x="420" y="193" font-family="monospace" font-size="14" fill="#fca5a5">2022</text>
+  <text x="495" y="193" font-family="monospace" font-size="14" fill="#ef4444">&#x2717;</text>
+  <rect x="560" y="168" width="140" height="40" rx="8" fill="#ef4444" opacity="0.15"/>
+  <text x="580" y="193" font-family="monospace" font-size="14" fill="#fca5a5">2021</text>
+  <text x="655" y="193" font-family="monospace" font-size="14" fill="#ef4444">&#x2717;</text>
+  <!-- Row 2 -->
+  <rect x="80" y="220" width="140" height="40" rx="8" fill="#22c55e" opacity="0.15"/>
+  <text x="100" y="245" font-family="monospace" font-size="14" fill="#86efac">2020</text>
+  <text x="165" y="245" font-family="monospace" font-size="14" fill="#22c55e">&#x2713;</text>
+  <rect x="240" y="220" width="140" height="40" rx="8" fill="#ef4444" opacity="0.15"/>
+  <text x="260" y="245" font-family="monospace" font-size="14" fill="#fca5a5">2019</text>
+  <text x="335" y="245" font-family="monospace" font-size="14" fill="#ef4444">&#x2717;</text>
+  <rect x="400" y="220" width="140" height="40" rx="8" fill="#ef4444" opacity="0.15"/>
+  <text x="420" y="245" font-family="monospace" font-size="14" fill="#fca5a5">2018</text>
+  <text x="495" y="245" font-family="monospace" font-size="14" fill="#ef4444">&#x2717;</text>
+  <rect x="560" y="220" width="140" height="40" rx="8" fill="#ef4444" opacity="0.15"/>
+  <text x="580" y="245" font-family="monospace" font-size="14" fill="#fca5a5">1900</text>
+  <text x="655" y="245" font-family="monospace" font-size="14" fill="#ef4444">&#x2717;</text>
+  <!-- Row 3 -->
+  <rect x="80" y="272" width="140" height="40" rx="8" fill="#22c55e" opacity="0.15"/>
+  <text x="100" y="297" font-family="monospace" font-size="14" fill="#86efac">2000</text>
+  <text x="165" y="297" font-family="monospace" font-size="14" fill="#22c55e">&#x2713;</text>
+  <rect x="240" y="272" width="140" height="40" rx="8" fill="#22c55e" opacity="0.15"/>
+  <text x="260" y="297" font-family="monospace" font-size="14" fill="#86efac">2016</text>
+  <text x="335" y="297" font-family="monospace" font-size="14" fill="#22c55e">&#x2713;</text>
+  <rect x="400" y="272" width="140" height="40" rx="8" fill="#22c55e" opacity="0.15"/>
+  <text x="420" y="297" font-family="monospace" font-size="14" fill="#86efac">2028</text>
+  <text x="495" y="297" font-family="monospace" font-size="14" fill="#22c55e">&#x2713;</text>
+  <rect x="560" y="272" width="140" height="40" rx="8" fill="#22c55e" opacity="0.15"/>
+  <text x="580" y="297" font-family="monospace" font-size="14" fill="#86efac">2400</text>
+  <text x="655" y="297" font-family="monospace" font-size="14" fill="#22c55e">&#x2713;</text>
+  <!-- Legend -->
+  <rect x="200" y="330" width="16" height="16" rx="4" fill="#22c55e" opacity="0.3"/>
+  <text x="224" y="343" font-family="monospace" font-size="11" fill="#86efac">Leap Year</text>
+  <rect x="380" y="330" width="16" height="16" rx="4" fill="#ef4444" opacity="0.3"/>
+  <text x="404" y="343" font-family="monospace" font-size="11" fill="#fca5a5">Not Leap Year</text>
+  <!-- Rule note -->
+  <text x="140" y="380" font-family="monospace" font-size="9" fill="#6b21a8">Rule: divisible by 4, except centuries unless also divisible by 400</text>
+</svg>

@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="400" fill="none">
+  <rect width="800" height="400" rx="16" fill="#0a1a1a"/>
+  <rect x="200" y="30" width="400" height="340" rx="14" fill="#0f2b2b" stroke="#14b8a6" stroke-width="1"/>
+  <text x="270" y="65" font-family="monospace" font-size="16" fill="#5eead4">Times Tables Game</text>
+  <text x="250" y="95" font-family="monospace" font-size="11" fill="#0d9488">Score: 7/10  |  Time: 0:45</text>
+  <rect x="230" y="115" width="340" height="100" rx="10" fill="#042f2e"/>
+  <text x="310" y="155" font-family="monospace" font-size="32" fill="#5eead4">8 x 7 = ?</text>
+  <text x="330" y="195" font-family="monospace" font-size="12" fill="#14b8a6">Question 8 of 10</text>
+  <rect x="230" y="235" width="160" height="40" rx="8" fill="#115e59"/>
+  <text x="285" y="260" font-family="monospace" font-size="14" fill="#5eead4">54</text>
+  <rect x="410" y="235" width="160" height="40" rx="8" fill="#115e59"/>
+  <text x="465" y="260" font-family="monospace" font-size="14" fill="#5eead4">56</text>
+  <rect x="230" y="285" width="160" height="40" rx="8" fill="#115e59"/>
+  <text x="285" y="310" font-family="monospace" font-size="14" fill="#5eead4">48</text>
+  <rect x="410" y="285" width="160" height="40" rx="8" fill="#115e59"/>
+  <text x="465" y="310" font-family="monospace" font-size="14" fill="#5eead4">64</text>
+  <rect x="230" y="340" width="340" height="6" rx="3" fill="#042f2e"/>
+  <rect x="230" y="340" width="238" height="6" rx="3" fill="#14b8a6"/>
+</svg>

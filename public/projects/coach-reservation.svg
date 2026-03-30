@@ -1,0 +1,83 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="400" fill="none">
+  <rect width="800" height="400" rx="16" fill="#0a1520"/>
+  <!-- Title -->
+  <text x="250" y="35" font-family="monospace" font-size="16" fill="#38bdf8" font-weight="bold">Coach Seat Reservation</text>
+  <!-- Bus outline -->
+  <rect x="180" y="55" width="440" height="260" rx="20" fill="#0c2135" stroke="#0284c7" stroke-width="1.5"/>
+  <!-- Windshield -->
+  <rect x="560" y="75" width="40" height="80" rx="10" fill="#164e63" stroke="#22d3ee" stroke-width="1"/>
+  <!-- Driver area label -->
+  <text x="562" y="120" font-family="monospace" font-size="9" fill="#67e8f9">DRV</text>
+  <!-- Seat grid - Row labels -->
+  <text x="200" y="90" font-family="monospace" font-size="9" fill="#7dd3fc">A</text>
+  <text x="200" y="120" font-family="monospace" font-size="9" fill="#7dd3fc">B</text>
+  <text x="200" y="165" font-family="monospace" font-size="9" fill="#7dd3fc">C</text>
+  <text x="200" y="195" font-family="monospace" font-size="9" fill="#7dd3fc">D</text>
+  <!-- Column labels -->
+  <text x="228" y="68" font-family="monospace" font-size="8" fill="#64748b">1</text>
+  <text x="268" y="68" font-family="monospace" font-size="8" fill="#64748b">2</text>
+  <text x="308" y="68" font-family="monospace" font-size="8" fill="#64748b">3</text>
+  <text x="348" y="68" font-family="monospace" font-size="8" fill="#64748b">4</text>
+  <text x="388" y="68" font-family="monospace" font-size="8" fill="#64748b">5</text>
+  <text x="428" y="68" font-family="monospace" font-size="8" fill="#64748b">6</text>
+  <text x="468" y="68" font-family="monospace" font-size="8" fill="#64748b">7</text>
+  <text x="508" y="68" font-family="monospace" font-size="8" fill="#64748b">8</text>
+  <!-- Row A seats -->
+  <rect x="220" y="78" width="30" height="22" rx="4" fill="#0ea5e9" opacity="0.3" stroke="#0ea5e9" stroke-width="1"/>
+  <rect x="260" y="78" width="30" height="22" rx="4" fill="#ef4444" opacity="0.4" stroke="#ef4444" stroke-width="1"/>
+  <rect x="300" y="78" width="30" height="22" rx="4" fill="#0ea5e9" opacity="0.3" stroke="#0ea5e9" stroke-width="1"/>
+  <rect x="340" y="78" width="30" height="22" rx="4" fill="#0ea5e9" opacity="0.3" stroke="#0ea5e9" stroke-width="1"/>
+  <rect x="380" y="78" width="30" height="22" rx="4" fill="#22c55e" opacity="0.4" stroke="#22c55e" stroke-width="1.5"/>
+  <rect x="420" y="78" width="30" height="22" rx="4" fill="#ef4444" opacity="0.4" stroke="#ef4444" stroke-width="1"/>
+  <rect x="460" y="78" width="30" height="22" rx="4" fill="#0ea5e9" opacity="0.3" stroke="#0ea5e9" stroke-width="1"/>
+  <rect x="500" y="78" width="30" height="22" rx="4" fill="#ef4444" opacity="0.4" stroke="#ef4444" stroke-width="1"/>
+  <!-- Row B seats -->
+  <rect x="220" y="108" width="30" height="22" rx="4" fill="#ef4444" opacity="0.4" stroke="#ef4444" stroke-width="1"/>
+  <rect x="260" y="108" width="30" height="22" rx="4" fill="#0ea5e9" opacity="0.3" stroke="#0ea5e9" stroke-width="1"/>
+  <rect x="300" y="108" width="30" height="22" rx="4" fill="#ef4444" opacity="0.4" stroke="#ef4444" stroke-width="1"/>
+  <rect x="340" y="108" width="30" height="22" rx="4" fill="#0ea5e9" opacity="0.3" stroke="#0ea5e9" stroke-width="1"/>
+  <rect x="380" y="108" width="30" height="22" rx="4" fill="#0ea5e9" opacity="0.3" stroke="#0ea5e9" stroke-width="1"/>
+  <rect x="420" y="108" width="30" height="22" rx="4" fill="#0ea5e9" opacity="0.3" stroke="#0ea5e9" stroke-width="1"/>
+  <rect x="460" y="108" width="30" height="22" rx="4" fill="#ef4444" opacity="0.4" stroke="#ef4444" stroke-width="1"/>
+  <rect x="500" y="108" width="30" height="22" rx="4" fill="#0ea5e9" opacity="0.3" stroke="#0ea5e9" stroke-width="1"/>
+  <!-- Aisle -->
+  <text x="350" y="147" font-family="monospace" font-size="8" fill="#475569">--- aisle ---</text>
+  <!-- Row C seats -->
+  <rect x="220" y="153" width="30" height="22" rx="4" fill="#0ea5e9" opacity="0.3" stroke="#0ea5e9" stroke-width="1"/>
+  <rect x="260" y="153" width="30" height="22" rx="4" fill="#0ea5e9" opacity="0.3" stroke="#0ea5e9" stroke-width="1"/>
+  <rect x="300" y="153" width="30" height="22" rx="4" fill="#ef4444" opacity="0.4" stroke="#ef4444" stroke-width="1"/>
+  <rect x="340" y="153" width="30" height="22" rx="4" fill="#22c55e" opacity="0.4" stroke="#22c55e" stroke-width="1.5"/>
+  <rect x="380" y="153" width="30" height="22" rx="4" fill="#ef4444" opacity="0.4" stroke="#ef4444" stroke-width="1"/>
+  <rect x="420" y="153" width="30" height="22" rx="4" fill="#0ea5e9" opacity="0.3" stroke="#0ea5e9" stroke-width="1"/>
+  <rect x="460" y="153" width="30" height="22" rx="4" fill="#0ea5e9" opacity="0.3" stroke="#0ea5e9" stroke-width="1"/>
+  <rect x="500" y="153" width="30" height="22" rx="4" fill="#ef4444" opacity="0.4" stroke="#ef4444" stroke-width="1"/>
+  <!-- Row D seats -->
+  <rect x="220" y="183" width="30" height="22" rx="4" fill="#ef4444" opacity="0.4" stroke="#ef4444" stroke-width="1"/>
+  <rect x="260" y="183" width="30" height="22" rx="4" fill="#0ea5e9" opacity="0.3" stroke="#0ea5e9" stroke-width="1"/>
+  <rect x="300" y="183" width="30" height="22" rx="4" fill="#0ea5e9" opacity="0.3" stroke="#0ea5e9" stroke-width="1"/>
+  <rect x="340" y="183" width="30" height="22" rx="4" fill="#ef4444" opacity="0.4" stroke="#ef4444" stroke-width="1"/>
+  <rect x="380" y="183" width="30" height="22" rx="4" fill="#0ea5e9" opacity="0.3" stroke="#0ea5e9" stroke-width="1"/>
+  <rect x="420" y="183" width="30" height="22" rx="4" fill="#ef4444" opacity="0.4" stroke="#ef4444" stroke-width="1"/>
+  <rect x="460" y="183" width="30" height="22" rx="4" fill="#0ea5e9" opacity="0.3" stroke="#0ea5e9" stroke-width="1"/>
+  <rect x="500" y="183" width="30" height="22" rx="4" fill="#0ea5e9" opacity="0.3" stroke="#0ea5e9" stroke-width="1"/>
+  <!-- Back row (5 seats) -->
+  <rect x="260" y="220" width="30" height="22" rx="4" fill="#ef4444" opacity="0.4" stroke="#ef4444" stroke-width="1"/>
+  <rect x="320" y="220" width="30" height="22" rx="4" fill="#0ea5e9" opacity="0.3" stroke="#0ea5e9" stroke-width="1"/>
+  <rect x="380" y="220" width="30" height="22" rx="4" fill="#0ea5e9" opacity="0.3" stroke="#0ea5e9" stroke-width="1"/>
+  <rect x="440" y="220" width="30" height="22" rx="4" fill="#ef4444" opacity="0.4" stroke="#ef4444" stroke-width="1"/>
+  <rect x="500" y="220" width="30" height="22" rx="4" fill="#0ea5e9" opacity="0.3" stroke="#0ea5e9" stroke-width="1"/>
+  <!-- Legend -->
+  <rect x="200" y="265" width="16" height="12" rx="3" fill="#0ea5e9" opacity="0.3" stroke="#0ea5e9" stroke-width="1"/>
+  <text x="222" y="275" font-family="monospace" font-size="10" fill="#7dd3fc">Available</text>
+  <rect x="310" y="265" width="16" height="12" rx="3" fill="#ef4444" opacity="0.4" stroke="#ef4444" stroke-width="1"/>
+  <text x="332" y="275" font-family="monospace" font-size="10" fill="#fca5a5">Booked</text>
+  <rect x="410" y="265" width="16" height="12" rx="3" fill="#22c55e" opacity="0.4" stroke="#22c55e" stroke-width="1.5"/>
+  <text x="432" y="275" font-family="monospace" font-size="10" fill="#86efac">Selected</text>
+  <!-- Booking info -->
+  <rect x="60" y="300" width="680" height="75" rx="10" fill="#0c2135" stroke="#0284c7" stroke-width="1"/>
+  <text x="80" y="325" font-family="monospace" font-size="11" fill="#38bdf8">Route: London -> Manchester</text>
+  <text x="80" y="345" font-family="monospace" font-size="11" fill="#7dd3fc">Date: Mar 30, 2026  |  Dep: 09:15  |  Seats: A5, C4</text>
+  <text x="80" y="365" font-family="monospace" font-size="11" fill="#7dd3fc">Available: 20/37  |  Price: $24.50 per seat</text>
+  <rect x="600" y="318" width="120" height="35" rx="8" fill="#0284c7"/>
+  <text x="618" y="340" font-family="monospace" font-size="11" fill="white">Book Now</text>
+</svg>

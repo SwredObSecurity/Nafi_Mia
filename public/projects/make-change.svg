@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="400" fill="none">
+  <rect width="800" height="400" rx="16" fill="#1a1a0a"/>
+  <!-- Title -->
+  <text x="270" y="38" font-family="monospace" font-size="18" fill="#fbbf24" font-weight="bold">Change Calculator</text>
+  <!-- Input section -->
+  <rect x="40" y="55" width="350" height="100" rx="12" fill="#2d2a14" stroke="#eab308" stroke-width="1"/>
+  <text x="60" y="82" font-family="monospace" font-size="12" fill="#fde68a">Purchase Amount</text>
+  <rect x="60" y="92" width="140" height="32" rx="6" fill="#1a1708" stroke="#ca8a04" stroke-width="1"/>
+  <text x="75" y="113" font-family="monospace" font-size="14" fill="#fef3c7">$  17.63</text>
+  <text x="230" y="82" font-family="monospace" font-size="12" fill="#fde68a">Amount Paid</text>
+  <rect x="230" y="92" width="140" height="32" rx="6" fill="#1a1708" stroke="#ca8a04" stroke-width="1"/>
+  <text x="245" y="113" font-family="monospace" font-size="14" fill="#fef3c7">$  20.00</text>
+  <!-- Result -->
+  <rect x="420" y="55" width="350" height="100" rx="12" fill="#2d2a14" stroke="#eab308" stroke-width="1"/>
+  <text x="440" y="82" font-family="monospace" font-size="12" fill="#fbbf24">Change Due</text>
+  <text x="440" y="120" font-family="monospace" font-size="30" fill="#fef08a" font-weight="bold">$2.37</text>
+  <!-- Denomination breakdown -->
+  <rect x="40" y="175" width="720" height="190" rx="12" fill="#2d2a14" stroke="#eab308" stroke-width="1"/>
+  <text x="300" y="202" font-family="monospace" font-size="13" fill="#fbbf24" font-weight="bold">Denomination Breakdown</text>
+  <line x1="60" y1="212" x2="740" y2="212" stroke="#4a4520" stroke-width="1"/>
+  <!-- Bills row -->
+  <text x="60" y="238" font-family="monospace" font-size="11" fill="#fde68a" font-weight="bold">Bills</text>
+  <rect x="120" y="222" width="80" height="34" rx="6" fill="#166534" stroke="#22c55e" stroke-width="1"/>
+  <text x="133" y="237" font-family="monospace" font-size="8" fill="#86efac">$20</text>
+  <text x="145" y="251" font-family="monospace" font-size="12" fill="white">x 0</text>
+  <rect x="210" y="222" width="80" height="34" rx="6" fill="#166534" stroke="#22c55e" stroke-width="1"/>
+  <text x="223" y="237" font-family="monospace" font-size="8" fill="#86efac">$10</text>
+  <text x="235" y="251" font-family="monospace" font-size="12" fill="white">x 0</text>
+  <rect x="300" y="222" width="80" height="34" rx="6" fill="#166534" stroke="#22c55e" stroke-width="1"/>
+  <text x="318" y="237" font-family="monospace" font-size="8" fill="#86efac">$5</text>
+  <text x="325" y="251" font-family="monospace" font-size="12" fill="white">x 0</text>
+  <rect x="390" y="222" width="80" height="34" rx="6" fill="#166534" stroke="#22c55e" stroke-width="1"/>
+  <text x="408" y="237" font-family="monospace" font-size="8" fill="#86efac">$2</text>
+  <text x="415" y="251" font-family="monospace" font-size="12" fill="#fef08a">x 1</text>
+  <rect x="480" y="222" width="80" height="34" rx="6" fill="#166534" stroke="#22c55e" stroke-width="1"/>
+  <text x="498" y="237" font-family="monospace" font-size="8" fill="#86efac">$1</text>
+  <text x="505" y="251" font-family="monospace" font-size="12" fill="white">x 0</text>
+  <!-- Coins row -->
+  <text x="60" y="290" font-family="monospace" font-size="11" fill="#fde68a" font-weight="bold">Coins</text>
+  <circle cx="150" cy="290" r="20" fill="#854d0e" stroke="#eab308" stroke-width="1.5"/>
+  <text x="139" y="287" font-family="monospace" font-size="7" fill="#fef3c7">25c</text>
+  <text x="141" y="299" font-family="monospace" font-size="9" fill="#fef08a">x 1</text>
+  <circle cx="220" cy="290" r="18" fill="#6b3a0a" stroke="#d97706" stroke-width="1.5"/>
+  <text x="210" y="287" font-family="monospace" font-size="7" fill="#fef3c7">10c</text>
+  <text x="211" y="299" font-family="monospace" font-size="9" fill="#fef08a">x 1</text>
+  <circle cx="285" cy="290" r="16" fill="#5c3310" stroke="#b45309" stroke-width="1.5"/>
+  <text x="277" y="287" font-family="monospace" font-size="7" fill="#fef3c7">5c</text>
+  <text x="277" y="299" font-family="monospace" font-size="9" fill="white">x 0</text>
+  <circle cx="345" cy="290" r="14" fill="#4a2c0a" stroke="#92400e" stroke-width="1.5"/>
+  <text x="338" y="287" font-family="monospace" font-size="7" fill="#fef3c7">2c</text>
+  <text x="337" y="299" font-family="monospace" font-size="9" fill="#fef08a">x 1</text>
+  <circle cx="400" cy="290" r="12" fill="#3d2508" stroke="#78350f" stroke-width="1.5"/>
+  <text x="394" y="287" font-family="monospace" font-size="7" fill="#fef3c7">1c</text>
+  <text x="393" y="299" font-family="monospace" font-size="9" fill="white">x 0</text>
+  <!-- Summary line -->
+  <text x="60" y="348" font-family="monospace" font-size="11" fill="#fbbf24">Total: $2.00 + $0.25 + $0.10 + $0.02 = $2.37</text>
+</svg>

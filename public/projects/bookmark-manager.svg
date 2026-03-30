@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="400" fill="none">
+  <rect width="800" height="400" rx="16" fill="#0a1a1a"/>
+  <!-- Sidebar -->
+  <rect x="30" y="30" width="180" height="340" rx="12" fill="#1a2f2f" stroke="#14b8a6" stroke-width="1"/>
+  <text x="55" y="62" font-family="monospace" font-size="13" fill="#5eead4" font-weight="bold">Collections</text>
+  <line x1="45" y1="72" x2="195" y2="72" stroke="#2d4a4a" stroke-width="1"/>
+  <rect x="45" y="82" width="150" height="28" rx="6" fill="#14b8a6" opacity="0.2"/>
+  <text x="55" y="101" font-family="monospace" font-size="11" fill="#5eead4">All Bookmarks</text>
+  <text x="55" y="131" font-family="monospace" font-size="11" fill="#94a3b8">Dev Tools</text>
+  <text x="55" y="156" font-family="monospace" font-size="11" fill="#94a3b8">Tutorials</text>
+  <text x="55" y="181" font-family="monospace" font-size="11" fill="#94a3b8">News</text>
+  <text x="55" y="206" font-family="monospace" font-size="11" fill="#94a3b8">Social</text>
+  <text x="55" y="240" font-family="monospace" font-size="10" fill="#14b8a6">+ New Folder</text>
+  <!-- Main content -->
+  <rect x="230" y="30" width="540" height="340" rx="12" fill="#1a2f2f" stroke="#14b8a6" stroke-width="1"/>
+  <!-- Search bar -->
+  <rect x="250" y="50" width="500" height="32" rx="8" fill="#0d1f1f" stroke="#2d4a4a" stroke-width="1"/>
+  <text x="265" y="71" font-family="monospace" font-size="11" fill="#4a7a7a">Search bookmarks...</text>
+  <!-- Bookmark items -->
+  <rect x="250" y="100" width="500" height="52" rx="8" fill="#0d1f1f"/>
+  <rect x="265" y="112" width="28" height="28" rx="6" fill="#14b8a6" opacity="0.3"/>
+  <text x="273" y="131" font-family="monospace" font-size="12" fill="#14b8a6">G</text>
+  <text x="305" y="122" font-family="monospace" font-size="11" fill="#e2e8f0">GitHub - Code Repository</text>
+  <text x="305" y="140" font-family="monospace" font-size="9" fill="#5eead4">https://github.com</text>
+  <text x="680" y="131" font-family="monospace" font-size="9" fill="#4a7a7a">Dev</text>
+  <rect x="250" y="162" width="500" height="52" rx="8" fill="#0d1f1f"/>
+  <rect x="265" y="174" width="28" height="28" rx="6" fill="#f97316" opacity="0.3"/>
+  <text x="273" y="193" font-family="monospace" font-size="12" fill="#f97316">S</text>
+  <text x="305" y="184" font-family="monospace" font-size="11" fill="#e2e8f0">Stack Overflow - Q&amp;A</text>
+  <text x="305" y="202" font-family="monospace" font-size="9" fill="#5eead4">https://stackoverflow.com</text>
+  <text x="680" y="193" font-family="monospace" font-size="9" fill="#4a7a7a">Dev</text>
+  <rect x="250" y="224" width="500" height="52" rx="8" fill="#0d1f1f"/>
+  <rect x="265" y="236" width="28" height="28" rx="6" fill="#ef4444" opacity="0.3"/>
+  <text x="273" y="255" font-family="monospace" font-size="12" fill="#ef4444">Y</text>
+  <text x="305" y="246" font-family="monospace" font-size="11" fill="#e2e8f0">YouTube - Video Platform</text>
+  <text x="305" y="264" font-family="monospace" font-size="9" fill="#5eead4">https://youtube.com</text>
+  <text x="672" y="255" font-family="monospace" font-size="9" fill="#4a7a7a">Media</text>
+  <rect x="250" y="286" width="500" height="52" rx="8" fill="#0d1f1f"/>
+  <rect x="265" y="298" width="28" height="28" rx="6" fill="#8b5cf6" opacity="0.3"/>
+  <text x="273" y="317" font-family="monospace" font-size="12" fill="#8b5cf6">M</text>
+  <text x="305" y="308" font-family="monospace" font-size="11" fill="#e2e8f0">MDN Web Docs - Reference</text>
+  <text x="305" y="326" font-family="monospace" font-size="9" fill="#5eead4">https://developer.mozilla.org</text>
+  <text x="672" y="317" font-family="monospace" font-size="9" fill="#4a7a7a">Docs</text>
+</svg>
