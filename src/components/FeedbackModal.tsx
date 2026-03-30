@@ -30,7 +30,7 @@ export default function FeedbackModal({
     setStatus("sending");
 
     try {
-      const res = await fetch("https://formspree.io/f/nafimiatal@gmail.com", {
+      const res = await fetch("https://formspree.io/nafimiatal@gmail.com", {
         method: "POST",
         headers: { "Content-Type": "application/json", Accept: "application/json" },
         body: JSON.stringify({ name, email, message }),
@@ -43,20 +43,10 @@ export default function FeedbackModal({
         setMessage("");
         setTimeout(() => { setStatus("idle"); onClose(); }, 2000);
       } else {
-        // Fallback: open mailto with the form data pre-filled
-        const subject = encodeURIComponent("Portfolio Feedback");
-        const body = encodeURIComponent(`Name: ${name}\nEmail: ${email}\n\n${message}`);
-        window.open(`mailto:nafimiatal@gmail.com?subject=${subject}&body=${body}`, "_blank");
-        setStatus("sent");
-        setTimeout(() => { setStatus("idle"); onClose(); }, 2000);
+        setStatus("error");
       }
     } catch {
-      // Fallback: open mailto
-      const subject = encodeURIComponent("Portfolio Feedback");
-      const body = encodeURIComponent(`Name: ${name}\nEmail: ${email}\n\n${message}`);
-      window.open(`mailto:nafimiatal@gmail.com?subject=${subject}&body=${body}`, "_blank");
-      setStatus("sent");
-      setTimeout(() => { setStatus("idle"); onClose(); }, 2000);
+      setStatus("error");
     }
   }
 
@@ -98,7 +88,26 @@ export default function FeedbackModal({
               <p className="text-sm text-muted">Your feedback helps me improve. Thanks for taking the time!</p>
             </div>
 
-            {status === "sent" ? (
+            {status === "error" ? (
+              <motion.div
+                initial={{ opacity: 0, scale: 0.9 }}
+                animate={{ opacity: 1, scale: 1 }}
+                className="text-center py-6 space-y-3"
+              >
+                <div className="w-12 h-12 mx-auto rounded-full bg-red-500/10 flex items-center justify-center">
+                  <svg className="w-6 h-6 text-red-500" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12" />
+                  </svg>
+                </div>
+                <p className="text-sm font-medium">Something went wrong.</p>
+                <button
+                  onClick={() => setStatus("idle")}
+                  className="text-sm text-accent hover:underline cursor-pointer"
+                >
+                  Try again
+                </button>
+              </motion.div>
+            ) : status === "sent" ? (
               <motion.div
                 initial={{ opacity: 0, scale: 0.9 }}
                 animate={{ opacity: 1, scale: 1 }}
