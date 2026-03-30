@@ -298,6 +298,95 @@ export default function Home() {
       </section>
 
       {/* ═══════════════════════════════════════════
+          WHERE I LEARNED
+      ═══════════════════════════════════════════ */}
+      <section id="learning" className="py-32 px-6">
+        <div className="max-w-3xl mx-auto">
+          <ScrollReveal>
+            <div className="space-y-4 mb-12">
+              <span className="text-[13px] uppercase tracking-[0.2em] text-accent font-medium font-mono">
+                03 &mdash; Learning
+              </span>
+              <div className="section-divider" />
+              <h2 className="text-2xl sm:text-3xl font-bold tracking-tight pt-2">
+                Where I learned to code
+              </h2>
+              <p className="text-sm text-muted leading-relaxed max-w-lg">
+                These platforms shaped my foundation&mdash;from structured courses
+                to competitive problem-solving.
+              </p>
+            </div>
+          </ScrollReveal>
+
+          <div className="grid sm:grid-cols-2 gap-5">
+            {[
+              {
+                name: "Boot.dev",
+                url: "https://www.boot.dev",
+                desc: "Backend development through hands-on, project-based courses. Where I built my server-side fundamentals from the ground up.",
+                icon: "M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z",
+              },
+              {
+                name: "Sololearn",
+                url: "https://www.sololearn.com",
+                desc: "Bite-sized lessons that got me started. Perfect for picking up new language syntax quickly and learning on the go.",
+                icon: "M4.26 10.147a60.438 60.438 0 00-.491 6.347A48.62 48.62 0 0112 20.904a48.62 48.62 0 018.232-4.41 60.46 60.46 0 00-.491-6.347m-15.482 0a50.636 50.636 0 00-2.658-.813A59.906 59.906 0 0112 3.493a59.903 59.903 0 0110.399 5.84c-.896.248-1.783.52-2.658.814m-15.482 0A50.717 50.717 0 0112 13.489a50.702 50.702 0 017.74-3.342M6.75 15a.75.75 0 100-1.5.75.75 0 000 1.5zm0 0v-3.675A55.378 55.378 0 0112 8.443m-7.007 11.55A5.981 5.981 0 006.75 15.75v-1.5",
+              },
+              {
+                name: "Brilliant",
+                url: "https://brilliant.org",
+                desc: "Interactive problem-solving that sharpened my mathematical and logical thinking&mdash;the foundation behind every algorithm.",
+                icon: "M12 18v-5.25m0 0a6.01 6.01 0 001.5-.189m-1.5.189a6.01 6.01 0 01-1.5-.189m3.75 7.478a12.06 12.06 0 01-4.5 0m3.75 2.383a14.406 14.406 0 01-3 0M14.25 18v-.192c0-.983.658-1.823 1.508-2.316a7.5 7.5 0 10-7.517 0c.85.493 1.509 1.333 1.509 2.316V18",
+              },
+              {
+                name: "LeetCode",
+                url: "https://leetcode.com",
+                desc: "Where I sharpen my problem-solving skills daily. Data structures, algorithms, and the grind that builds real engineering intuition.",
+                icon: "M17.25 6.75L22.5 12l-5.25 5.25m-10.5 0L1.5 12l5.25-5.25m7.5-3l-4.5 16.5",
+              },
+            ].map((platform, i) => (
+              <ScrollReveal key={platform.name} delay={i * 0.1}>
+                <motion.a
+                  href={platform.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  whileHover={{ y: -4 }}
+                  transition={{ duration: 0.3 }}
+                  className="group block rounded-2xl border border-border bg-surface p-7 space-y-4
+                    hover:border-accent/30 hover:shadow-lg hover:shadow-accent/5 transition-all duration-300 h-full"
+                >
+                  <div className="flex items-center justify-between">
+                    <div className="flex items-center gap-3">
+                      <motion.div
+                        className="w-10 h-10 rounded-xl bg-accent/10 flex items-center justify-center"
+                        whileHover={{ rotate: 10, scale: 1.1 }}
+                      >
+                        <svg className="w-5 h-5 text-accent" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
+                          <path strokeLinecap="round" strokeLinejoin="round" d={platform.icon} />
+                        </svg>
+                      </motion.div>
+                      <h3 className="font-semibold group-hover:text-accent transition-colors">
+                        {platform.name}
+                      </h3>
+                    </div>
+                    <svg
+                      className="w-4 h-4 text-muted/40 group-hover:text-accent group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-all duration-300"
+                      fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}
+                    >
+                      <path strokeLinecap="round" strokeLinejoin="round" d="M4.5 19.5l15-15m0 0H8.25m11.25 0v11.25" />
+                    </svg>
+                  </div>
+                  <p className="text-sm text-muted leading-relaxed">
+                    {platform.desc}
+                  </p>
+                </motion.a>
+              </ScrollReveal>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* ═══════════════════════════════════════════
           HOW I WORK
       ═══════════════════════════════════════════ */}
       <section id="process" className="py-32 px-6">
@@ -387,7 +476,7 @@ export default function Home() {
           <ScrollReveal>
             <div className="space-y-4 mb-12">
               <span className="text-[13px] uppercase tracking-[0.2em] text-accent font-medium font-mono">
-                03 &mdash; Work
+                04 &mdash; Work
               </span>
               <div className="section-divider" />
               <h2 className="text-2xl sm:text-3xl font-bold tracking-tight pt-2">
@@ -421,7 +510,7 @@ export default function Home() {
           <ScrollReveal>
             <div className="space-y-4 mb-12">
               <span className="text-[13px] uppercase tracking-[0.2em] text-accent font-medium font-mono">
-                04 &mdash; Beyond Code
+                05 &mdash; Beyond Code
               </span>
               <div className="section-divider" />
               <h2 className="text-2xl sm:text-3xl font-bold tracking-tight pt-2">
