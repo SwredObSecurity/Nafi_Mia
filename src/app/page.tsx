@@ -604,25 +604,24 @@ export default function Home() {
           </ScrollReveal>
 
           <ScrollReveal delay={0.15}>
-            <div className="flex items-center justify-center gap-3 text-sm text-muted">
-              <div className="h-px w-12 bg-border" />
-              <span className="font-mono text-xs uppercase tracking-widest">
-                Nafi Mia Talukder
-              </span>
-              <div className="h-px w-12 bg-border" />
+            <div className="flex flex-col items-center gap-2">
+              <div className="flex items-center justify-center gap-3 text-sm text-muted">
+                <div className="h-px w-12 bg-border" />
+                <span className="font-mono text-xs uppercase tracking-widest">
+                  Nafi Mia Talukder
+                </span>
+                <div className="h-px w-12 bg-border" />
+              </div>
+              <a
+                href="mailto:nafimiatal@gmail.com"
+                className="text-xs text-muted/60 hover:text-foreground transition-colors"
+              >
+                nafimiatal@gmail.com
+              </a>
             </div>
           </ScrollReveal>
 
-          <ScrollReveal delay={0.2}>
-            <a
-              href="mailto:nafimiatal@gmail.com"
-              className="text-sm text-muted hover:text-foreground transition-colors"
-            >
-              nafimiatal@gmail.com
-            </a>
-          </ScrollReveal>
-
-          <ScrollReveal delay={0.3}>
+          <ScrollReveal delay={0.25}>
             <p className="text-xs text-muted/60">
               &copy; 2026 All rights reserved. Built with Next.js & Tailwind CSS.
             </p>
