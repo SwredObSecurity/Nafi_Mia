@@ -613,7 +613,16 @@ export default function Home() {
             </div>
           </ScrollReveal>
 
-          <ScrollReveal delay={0.25}>
+          <ScrollReveal delay={0.2}>
+            <a
+              href="mailto:nafimiatal@gmail.com"
+              className="text-sm text-muted hover:text-foreground transition-colors"
+            >
+              nafimiatal@gmail.com
+            </a>
+          </ScrollReveal>
+
+          <ScrollReveal delay={0.3}>
             <p className="text-xs text-muted/60">
               &copy; 2026 All rights reserved. Built with Next.js & Tailwind CSS.
             </p>
