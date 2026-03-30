@@ -614,7 +614,7 @@ export default function Home() {
               </div>
               <a
                 href="mailto:nafimiatal@gmail.com"
-                className="text-xs text-muted/60 hover:text-foreground transition-colors"
+                className="text-sm text-muted hover:text-foreground transition-colors"
               >
                 nafimiatal@gmail.com
               </a>
