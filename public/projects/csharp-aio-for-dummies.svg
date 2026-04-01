@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="400" fill="none">
+  <rect width="800" height="400" rx="16" fill="#0c0c1a"/>
+  <rect x="40" y="30" width="720" height="340" rx="12" fill="#12122a" stroke="#7c3aed" stroke-width="1"/>
+  <!-- Code editor look -->
+  <rect x="40" y="30" width="200" height="340" rx="12" fill="#0e0e20"/>
+  <text x="60" y="65" font-family="monospace" font-size="11" fill="#6d28d9">Explorer</text>
+  <text x="60" y="95" font-family="monospace" font-size="10" fill="#a78bfa">BK01 - C# Basics</text>
+  <text x="60" y="115" font-family="monospace" font-size="10" fill="#7c3aed">BK02 - OOP</text>
+  <text x="60" y="135" font-family="monospace" font-size="10" fill="#a78bfa">BK03 - Advanced</text>
+  <text x="60" y="155" font-family="monospace" font-size="10" fill="#7c3aed">BK05 - Web Dev</text>
+  <text x="60" y="175" font-family="monospace" font-size="10" fill="#a78bfa">BK06 - Unity</text>
+  <text x="60" y="210" font-family="monospace" font-size="9" fill="#475569">source/</text>
+  <text x="60" y="230" font-family="monospace" font-size="9" fill="#475569">docs/</text>
+  <text x="60" y="250" font-family="monospace" font-size="9" fill="#475569">links/</text>
+  <!-- Code area -->
+  <text x="265" y="65" font-family="monospace" font-size="10" fill="#475569">1</text>
+  <text x="290" y="65" font-family="monospace" font-size="11" fill="#c084fc">using</text>
+  <text x="335" y="65" font-family="monospace" font-size="11" fill="#e2e8f0">System;</text>
+  <text x="265" y="85" font-family="monospace" font-size="10" fill="#475569">2</text>
+  <text x="290" y="85" font-family="monospace" font-size="11" fill="#c084fc">using</text>
+  <text x="335" y="85" font-family="monospace" font-size="11" fill="#e2e8f0">System.Linq;</text>
+  <text x="265" y="115" font-family="monospace" font-size="10" fill="#475569">3</text>
+  <text x="290" y="115" font-family="monospace" font-size="11" fill="#c084fc">namespace</text>
+  <text x="375" y="115" font-family="monospace" font-size="11" fill="#22d3ee">CSharpAIO</text>
+  <text x="265" y="135" font-family="monospace" font-size="10" fill="#475569">4</text>
+  <text x="290" y="135" font-family="monospace" font-size="11" fill="#e2e8f0">{</text>
+  <text x="265" y="155" font-family="monospace" font-size="10" fill="#475569">5</text>
+  <text x="310" y="155" font-family="monospace" font-size="11" fill="#c084fc">public class</text>
+  <text x="405" y="155" font-family="monospace" font-size="11" fill="#22d3ee">Program</text>
+  <text x="265" y="175" font-family="monospace" font-size="10" fill="#475569">6</text>
+  <text x="310" y="175" font-family="monospace" font-size="11" fill="#e2e8f0">{</text>
+  <text x="265" y="195" font-family="monospace" font-size="10" fill="#475569">7</text>
+  <text x="330" y="195" font-family="monospace" font-size="11" fill="#c084fc">static void</text>
+  <text x="420" y="195" font-family="monospace" font-size="11" fill="#22d3ee">Main</text>
+  <text x="455" y="195" font-family="monospace" font-size="11" fill="#e2e8f0">()</text>
+  <text x="265" y="215" font-family="monospace" font-size="10" fill="#475569">8</text>
+  <text x="330" y="215" font-family="monospace" font-size="11" fill="#e2e8f0">{</text>
+  <text x="265" y="235" font-family="monospace" font-size="10" fill="#475569">9</text>
+  <text x="350" y="235" font-family="monospace" font-size="11" fill="#e2e8f0">Console.WriteLine(</text>
+  <text x="530" y="235" font-family="monospace" font-size="11" fill="#a3e635">"C# 10.0"</text>
+  <text x="620" y="235" font-family="monospace" font-size="11" fill="#e2e8f0">);</text>
+  <!-- Badge -->
+  <rect x="560" y="320" width="170" height="30" rx="6" fill="#7c3aed"/>
+  <text x="580" y="340" font-family="monospace" font-size="12" fill="white">C# 10.0 All-in-One</text>
+</svg>
