@@ -3,14 +3,15 @@
 import { useState, useRef, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 
-export default function FeedbackModal({
+export default function ContactModal({
   open,
   onClose,
 }: {
   open: boolean;
   onClose: () => void;
 }) {
-  const [message, setMessage] = useState("");
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
   const [status, setStatus] = useState<"idle" | "sending" | "sent" | "error">("idle");
   const overlayRef = useRef<HTMLDivElement>(null);
 
@@ -31,12 +32,13 @@ export default function FeedbackModal({
       const res = await fetch("https://formspree.io/f/xvzvalkz", {
         method: "POST",
         headers: { "Content-Type": "application/json", Accept: "application/json" },
-        body: JSON.stringify({ message }),
+        body: JSON.stringify({ _subject: "New contact from portfolio", name, email }),
       });
 
       if (res.ok) {
         setStatus("sent");
-        setMessage("");
+        setName("");
+        setEmail("");
         setTimeout(() => { setStatus("idle"); onClose(); }, 2000);
       } else {
         setStatus("error");
@@ -80,8 +82,8 @@ export default function FeedbackModal({
             </button>
 
             <div className="space-y-1 mb-6">
-              <h3 className="text-lg font-bold">Send Feedback</h3>
-              <p className="text-sm text-muted">Your feedback helps me improve. Thanks for taking the time!</p>
+              <h3 className="text-lg font-bold">Get in Touch</h3>
+              <p className="text-sm text-muted">Leave your details and I&apos;ll get back to you.</p>
             </div>
 
             {status === "error" ? (
@@ -114,20 +116,32 @@ export default function FeedbackModal({
                     <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
                   </svg>
                 </div>
-                <p className="text-sm font-medium">Feedback sent! Thank you.</p>
+                <p className="text-sm font-medium">Message sent! I&apos;ll be in touch.</p>
               </motion.div>
             ) : (
               <form onSubmit={handleSubmit} className="space-y-4">
                 <div>
-                  <label className="block text-[11px] font-mono uppercase tracking-widest text-muted mb-1.5">Message</label>
-                  <textarea
+                  <label className="block text-[11px] font-mono uppercase tracking-widest text-muted mb-1.5">Name</label>
+                  <input
+                    type="text"
                     required
-                    rows={4}
-                    value={message}
-                    onChange={(e) => setMessage(e.target.value)}
-                    className="w-full px-4 py-2.5 rounded-xl border border-border bg-background text-sm resize-none
+                    value={name}
+                    onChange={(e) => setName(e.target.value)}
+                    className="w-full px-4 py-2.5 rounded-xl border border-border bg-background text-sm
                       focus:outline-none focus:border-accent/50 focus:ring-1 focus:ring-accent/20 transition-all"
-                    placeholder="Your feedback..."
+                    placeholder="Your name"
+                  />
+                </div>
+                <div>
+                  <label className="block text-[11px] font-mono uppercase tracking-widest text-muted mb-1.5">Email</label>
+                  <input
+                    type="email"
+                    required
+                    value={email}
+                    onChange={(e) => setEmail(e.target.value)}
+                    className="w-full px-4 py-2.5 rounded-xl border border-border bg-background text-sm
+                      focus:outline-none focus:border-accent/50 focus:ring-1 focus:ring-accent/20 transition-all"
+                    placeholder="your@email.com"
                   />
                 </div>
                 <button
@@ -137,7 +151,7 @@ export default function FeedbackModal({
                     hover:shadow-lg hover:shadow-accent/20 transition-all duration-300
                     disabled:opacity-60 disabled:cursor-not-allowed cursor-pointer"
                 >
-                  {status === "sending" ? "Sending..." : "Send Feedback"}
+                  {status === "sending" ? "Sending..." : "Get in Touch"}
                 </button>
               </form>
             )}
