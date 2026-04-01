@@ -12,6 +12,7 @@ export default function ContactModal({
 }) {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
+  const [reason, setReason] = useState("");
   const [status, setStatus] = useState<"idle" | "sending" | "sent" | "error">("idle");
   const overlayRef = useRef<HTMLDivElement>(null);
 
@@ -32,13 +33,14 @@ export default function ContactModal({
       const res = await fetch("https://formspree.io/f/xvzvalkz", {
         method: "POST",
         headers: { "Content-Type": "application/json", Accept: "application/json" },
-        body: JSON.stringify({ _subject: "New contact from portfolio", name, email }),
+        body: JSON.stringify({ _subject: "New contact from portfolio", name, email, reason }),
       });
 
       if (res.ok) {
         setStatus("sent");
         setName("");
         setEmail("");
+        setReason("");
         setTimeout(() => { setStatus("idle"); onClose(); }, 2000);
       } else {
         setStatus("error");
@@ -142,6 +144,18 @@ export default function ContactModal({
                     className="w-full px-4 py-2.5 rounded-xl border border-border bg-background text-sm
                       focus:outline-none focus:border-accent/50 focus:ring-1 focus:ring-accent/20 transition-all"
                     placeholder="your@email.com"
+                  />
+                </div>
+                <div>
+                  <label className="block text-[11px] font-mono uppercase tracking-widest text-muted mb-1.5">Why do you want to get in touch?</label>
+                  <textarea
+                    required
+                    rows={3}
+                    value={reason}
+                    onChange={(e) => setReason(e.target.value)}
+                    className="w-full px-4 py-2.5 rounded-xl border border-border bg-background text-sm resize-none
+                      focus:outline-none focus:border-accent/50 focus:ring-1 focus:ring-accent/20 transition-all"
+                    placeholder="e.g. Collaboration, job opportunity, question about a project..."
                   />
                 </div>
                 <button
