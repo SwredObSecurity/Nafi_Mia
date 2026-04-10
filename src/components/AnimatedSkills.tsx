@@ -11,6 +11,7 @@ const skills = [
   { name: "HTML", level: 90, color: "#E34F26" },
   { name: "CSS", level: 85, color: "#1572B6" },
   { name: "JavaScript", level: 80, color: "#F7DF1E" },
+  { name: "Rust", level: 40, color: "#DEA584" },
 ];
 
 export default function AnimatedSkills() {
